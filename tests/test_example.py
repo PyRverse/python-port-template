@@ -41,4 +41,4 @@ def test_nonfinite_values_are_rejected(value: float) -> None:
 
 def test_unrepresentable_result_is_rejected() -> None:
     with pytest.raises(OverflowError):
-        center([-1e308, -1e308, 1e308])
+        center([-1.6e308, 1.6e308, 1.6e308])

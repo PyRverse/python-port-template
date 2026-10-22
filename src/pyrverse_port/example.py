@@ -13,7 +13,7 @@ def center(values: Iterable[float]) -> tuple[float, ...]:
 
     Raises:
         ValueError: If input is empty or contains a nonfinite value.
-        OverflowError: If the mean or any centered value cannot be represented.
+        OverflowError: If the intermediate sum or a centered value overflows.
     """
     data = tuple(float(value) for value in values)
     if not data:
